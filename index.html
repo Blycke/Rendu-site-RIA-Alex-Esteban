@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIA Check & Go - Diagnostic de Conformité IA</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>RIA Check & Go</h1>
+        <p>Évaluez la conformité de votre système d'IA au Règlement Européen (AI Act)</p>
+    </header>
+
+    <main>
+        <section class="diagnostic">
+            <h2>Questionnaire de Diagnostic</h2>
+            <form id="ria-form">
+                <div class="question">
+                    <h3>1. Votre système d'IA est-il utilisé dans un domaine à haut risque (santé, sécurité publique, etc.) ?</h3>
+                    <label><input type="radio" name="q1" value="oui" required> Oui</label>
+                    <label><input type="radio" name="q1" value="non"> Non</label>
+                    <label><input type="radio" name="q1" value="ns"> Je ne sais pas</label>
+                </div>
+
+                <div class="question">
+                    <h3>2. Utilisez-vous des données biométriques pour l'identification ?</h3>
+                    <label><input type="radio" name="q2" value="oui" required> Oui</label>
+                    <label><input type="radio" name="q2" value="non"> Non</label>
+                </div>
+
+                <div class="question">
+                    <h3>3. Votre système est-il transparent pour les utilisateurs finaux ?</h3>
+                    <label><input type="radio" name="q3" value="oui" required> Oui</label>
+                    <label><input type="radio" name="q3" value="non"> Non</label>
+                    <label><input type="radio" name="q3" value="partiel"> Partiellement</label>
+                </div>
+
+                <button type="submit">Valider et voir mon score</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 RIA Check & Go - Outil de conformité AI Act</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
