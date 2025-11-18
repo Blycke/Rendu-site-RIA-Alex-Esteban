@@ -3,46 +3,379 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIA Check & Go - Diagnostic de Conformité IA</title>
+    <title>RIA Check & Go - Conformité AI Act Européen</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>RIA Check & Go</h1>
-        <p>Évaluez la conformité de votre système d'IA au Règlement Européen (AI Act)</p>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">RIA Check & Go</span>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-    <main>
-        <section class="diagnostic">
-            <h2>Questionnaire de Diagnostic</h2>
-            <form id="ria-form">
-                <div class="question">
-                    <h3>1. Votre système d'IA est-il utilisé dans un domaine à haut risque (santé, sécurité publique, etc.) ?</h3>
-                    <label><input type="radio" name="q1" value="oui" required> Oui</label>
-                    <label><input type="radio" name="q1" value="non"> Non</label>
-                    <label><input type="radio" name="q1" value="ns"> Je ne sais pas</label>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#hero" class="nav-link active">Accueil</a>
+                    <a href="#features" class="nav-link">Fonctionnalités</a>
+                    <a href="#process" class="nav-link">Processus</a>
+                    <a href="#conformite" class="nav-link">Conformité</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span>Conformité AI Act Européen</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Conformez votre IA au<br>
+                        <span class="gradient-text">Règlement RIA</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Évaluez, classifiez et mettez en conformité vos systèmes d'Intelligence Artificielle 
+                        avec le règlement européen. Un diagnostic complet en quelques minutes.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn btn-primary">
+                            Démarrer le diagnostic
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#features" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+
+                    <div class="hero-badges">
+                        <div class="hero-badge-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>100% conforme RIA</span>
+                        </div>
+                        <div class="hero-badge-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                            <span>RGPD garanti</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="question">
-                    <h3>2. Utilisez-vous des données biométriques pour l'identification ?</h3>
-                    <label><input type="radio" name="q2" value="oui" required> Oui</label>
-                    <label><input type="radio" name="q2" value="non"> Non</label>
+                <div class="hero-visual">
+                    <div class="qr-card">
+                        <div class="qr-code">
+                            <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="8" height="8"/>
+                                <rect x="13" y="3" width="8" height="8"/>
+                                <rect x="3" y="13" width="8" height="8"/>
+                                <rect x="13" y="13" width="8" height="8"/>
+                            </svg>
+                        </div>
+                        <p class="qr-text">Scannez pour accéder à l'application mobile</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Fonctionnalités complètes</h2>
+                <p class="section-subtitle">Tout ce dont vous avez besoin pour la conformité RIA</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon orange">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                            <line x1="12" y1="9" x2="12" y2="13"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Classification des Risques</h3>
+                    <p class="feature-description">Questionnaire intelligent basé sur les Annexes II & III pour identifier le niveau de risque de votre IA</p>
                 </div>
 
-                <div class="question">
-                    <h3>3. Votre système est-il transparent pour les utilisateurs finaux ?</h3>
-                    <label><input type="radio" name="q3" value="oui" required> Oui</label>
-                    <label><input type="radio" name="q3" value="non"> Non</label>
-                    <label><input type="radio" name="q3" value="partiel"> Partiellement</label>
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Système de Gestion</h3>
+                    <p class="feature-description">Mise en place complète du système de gestion des risques conformément à l'Article 10</p>
                 </div>
 
-                <button type="submit">Valider et voir mon score</button>
-            </form>
-        </section>
-    </main>
+                <div class="feature-card">
+                    <div class="feature-icon purple">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Documentation Technique</h3>
+                    <p class="feature-description">Génération automatique de la documentation conforme à l'Annexe IV du règlement</p>
+                </div>
 
-    <footer>
-        <p>© 2025 RIA Check & Go - Outil de conformité AI Act</p>
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10"/>
+                            <line x1="12" y1="20" x2="12" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="14"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Qualité des Données</h3>
+                    <p class="feature-description">Vérification et traçabilité des datasets, détection des biais et gouvernance</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon yellow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Rapport PDF</h3>
+                    <p class="feature-description">Génération instantanée d'un rapport de conformité avec plan d'actions personnalisé</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon indigo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Enregistrement UE</h3>
+                    <p class="feature-description">Accompagnement pour l'enregistrement officiel des systèmes à haut risque</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Processus en 4 étapes</h2>
+                <p class="section-subtitle">Un parcours simplifié vers la conformité</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-number">01</div>
+                    <h3 class="process-title">Diagnostic</h3>
+                    <p class="process-description">Répondez au questionnaire dynamique pour évaluer votre système d'IA</p>
+                </div>
+
+                <div class="process-arrow">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">02</div>
+                    <h3 class="process-title">Classification</h3>
+                    <p class="process-description">Identification automatique du niveau de risque et des obligations applicables</p>
+                </div>
+
+                <div class="process-arrow">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">03</div>
+                    <h3 class="process-title">Plan d'action</h3>
+                    <p class="process-description">Génération d'un rapport détaillé avec recommandations personnalisées</p>
+                </div>
+
+                <div class="process-arrow">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">04</div>
+                    <h3 class="process-title">Conformité</h3>
+                    <p class="process-description">Accompagnement pour la mise en œuvre et l'enregistrement UE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conformité Section -->
+    <section id="conformite" class="conformite">
+        <div class="container">
+            <div class="conformite-grid">
+                <div class="conformite-content">
+                    <h2 class="conformite-title">
+                        Conformité garantie<br>
+                        <span class="gradient-text">RIA & RGPD</span>
+                    </h2>
+                    <p class="conformite-description">
+                        Notre solution couvre l'ensemble du cycle de vie de votre système d'IA, 
+                        de la conception à la surveillance post-marché.
+                    </p>
+                    
+                    <div class="conformite-list">
+                        <div class="conformite-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Disponibilité >99,5% garantie</span>
+                        </div>
+                        <div class="conformite-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Chiffrement des données end-to-end</span>
+                        </div>
+                        <div class="conformite-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Conformité WCAG pour l'accessibilité</span>
+                        </div>
+                        <div class="conformite-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Alignement complet avec le RIA européen</span>
+                        </div>
+                        <div class="conformite-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Traçabilité et journalisation complète</span>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Télécharger la documentation
+                    </a>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">250+</div>
+                        <div class="stat-label">Entreprises accompagnées</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Taux de conformité</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">15min</div>
+                        <div class="stat-label">Temps moyen diagnostic</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">All</div>
+                        <div class="stat-label">Articles RIA couverts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <span>RIA Check & Go</span>
+                    </div>
+                    <p class="footer-description">
+                        Votre partenaire pour la conformité au Règlement européen sur l'Intelligence Artificielle.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Solution</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Fonctionnalités</a></li>
+                        <li><a href="#process">Processus</a></li>
+                        <li><a href="#conformite">Conformité</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Ressources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Guide RIA</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li>contact@riacheckgo.eu</li>
+                        <li>+33 1 23 45 67 89</li>
+                        <li>Paris, France</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 RIA Check & Go. Tous droits réservés. | Conformité RIA & RGPD garantie</p>
+            </div>
+        </div>
     </footer>
 
     <script src="assets/js/script.js"></script>
