@@ -14,6 +14,7 @@ export default function RIAChatbotApp() {
   const [complianceScore, setComplianceScore] = useState(null);
   const messagesEndRef = useRef(null);
 
+  
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
